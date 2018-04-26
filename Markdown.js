@@ -134,7 +134,7 @@ var Markdown = React.createClass({
       var blockSource = source + '\n\n';
       return parser(blockSource, {inline: false});
     };
-    this.renderer = SimpleMarkdown.reactFor(SimpleMarkdown.ruleOutput(rules, 'react'));
+    this.renderer = SimpleMarkdown.routputFor(rules, 'react');
   },
 
   render: function() {
